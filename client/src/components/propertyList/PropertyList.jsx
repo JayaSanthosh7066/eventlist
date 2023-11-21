@@ -6,11 +6,11 @@ const PropertyList = () => {
 
 
   const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeHqGDXDjesKLp8Hs0i3AOVgcOicEqZKcrKrWbszkbbY473Apva6PwupoROkWrJe1ZcJA&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlunoHylUo4E2E7E5f_UPGxoJYDbVihy3-lg&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_z9WvJczYCe8fW3VfzDckeoTjgHfFU6jtgcymmfgFAF3gKc-K1DnmB_XUHHRnGOwdg5s&usqp=CAU",   
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZWvQtNge3Eg_T1aHqdCltqUnmz_NDyPpphwMf2Y9pAgidj-rjZNCQv7fDKDkAXLv67n0&usqp=CAU", 
-    "https://images.tribuneindia.com/cms/gall_content/2018/10/2018_10$largeimg28_Sunday_2018_005912011.jpg",  
+    "https://www.oyorooms.com/blog/wp-content/uploads/2018/03/shutterstock_1012469899.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ78e0qDm3xwX1JDHZLp0CRqiK2BV9qhyJVRzOaxwvXoCh9XUJB1-AEGiKwRkVnXCqh55g&usqp=CAU",
+    "https://cdn.pixabay.com/photo/2017/08/06/20/11/wedding-2595862_960_720.jpg",   
+    "https://yummycake.in/wp-content/uploads/2021/11/bachelor-party.jpg", 
+    "https://images.meesho.com/images/products/231351464/jbzbv_512.webp",  
   ];
   return (
     <div className="pList">

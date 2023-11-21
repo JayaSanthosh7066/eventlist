@@ -45,7 +45,7 @@ const Login = () => {
       <div className="contentArea">
         <div className="right">
           <h1>Sign in your account!</h1>
-          <p>Login with your personal details for continue</p>
+          <p>Login with Admin details to continue</p>
           <form>
             <input
               style={{

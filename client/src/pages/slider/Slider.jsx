@@ -11,11 +11,11 @@ const Slider = () => {
             src:"https://upload.wikimedia.org/wikipedia/commons/a/a1/Karimnagar_railway_station_1.jpg",
         },
         {
-            src:"https://upload.wikimedia.org/wikipedia/commons/f/f7/A_typical_charminar_evening.jpg",
+            src:"https://media-cdn.tripadvisor.com/media/photo-m/1280/0f/98/f7/df/charminar.jpg",
 
         },
         {
-            src:"https://images.thrillophilia.com/image/upload/s--X9XV8LdF--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/191/632/original/1581421342_warangal-warangal-fort-0.jpg.jpg",
+            src:"https://cityvillagenews.com/wp-content/uploads/2022/08/warangal.jpg",
         },
         
         

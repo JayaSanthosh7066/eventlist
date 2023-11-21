@@ -62,7 +62,7 @@ const Header = ({type}) =>{
                 { type !== "list" &&
                 <>
                 <br/>
-                <h1 className= "headerTitle" > Good Deeds </h1>
+                <h1 className= "headerTitle" > EventHub</h1>
                 <p className="headerDesc">
                 Need help planning your event ?We've got you covered!
                 wish your event planning and unique event design expertise,your event look amazing!

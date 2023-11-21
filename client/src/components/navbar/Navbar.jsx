@@ -26,7 +26,7 @@ const Mavbar = () => {
         <div className='navbardiv'>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top' >
                 <Container>
-                    <Navbar.Brand href="/">GoodDeeds</Navbar.Brand>
+                    <Navbar.Brand href="/">EventHub</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

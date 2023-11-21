@@ -19,6 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.10.0",
     "mongoose": "^6.6.5",
+    "morgan": "^1.10.0",
     "react-hook-use-state": "^1.1.0"
   },
   "devDependencies": {
