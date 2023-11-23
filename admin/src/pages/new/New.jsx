@@ -31,7 +31,7 @@ const New = ({ inputs, title }) => {
         img:url,
       };
 
-      await axios.post("/auth/register",newUser);
+      await axios.post("https://eventhub1.onrender.com/auth/register",newUser);
       navigate("/users")
 
     }

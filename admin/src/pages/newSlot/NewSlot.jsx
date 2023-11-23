@@ -22,7 +22,7 @@ const NewSlot = () => {
     e.preventDefault()
     const slotNumbers=slots.split(",").map((slot)=>({number:slot}))
     try{
-      await axios.post(`/slots/${hallId}`,{...info,slotNumbers})
+      await axios.post(`https://eventhub1.onrender.com/slots/${hallId}`,{...info,slotNumbers})
 
     }catch(err){}
     }

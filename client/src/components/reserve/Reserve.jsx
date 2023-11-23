@@ -62,7 +62,8 @@ const Reserve=({setOpen,hallId,hname,hprice})=>{
         try{
             await Promise.all(
                 selectedSlots.map((slotId)=>{
-                const res=axios.put(`/slots/availabilty/${slotId}`,{
+                const res=axios.put(`https://eventhub1.onrender.com
+                /slots/availabilty/${slotId}`,{
                     dates:alldates,
                 });
                 

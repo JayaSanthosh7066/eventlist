@@ -20,7 +20,7 @@ const Datatable = ({columns}) => {
 
   const handleDelete = async (id) => {
     try{
-      await axios.delete(`/${path}/${id}`);
+      await axios.delete(`https://eventhub1.onrender.com/${path}/${id}`);
       setList(list.filter((item) => item._id !== id));
 
     }catch(err){}

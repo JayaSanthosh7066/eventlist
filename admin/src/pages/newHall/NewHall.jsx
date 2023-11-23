@@ -49,7 +49,7 @@ const NewHall = () => {
         slots,
         photos:list,
       }
-      await axios.post("/halls",newHall)
+      await axios.post("https://eventhub1.onrender.com/halls",newHall)
       }catch(err){}
   }
   return (

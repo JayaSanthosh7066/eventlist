@@ -5,7 +5,6 @@ import { AuthContext } from "../context/AuthContext";
 import "./Signup.css";
 import Navbar from "../components/navbar/Navbar.jsx";
 
-
 const Signup = () => {
   const [credentials, setCredentials] = useState({
     username: undefined,
@@ -31,7 +30,7 @@ const Signup = () => {
     dispatch({ type: "REGISTER_START" });
     try {
       const res = await axios.post(
-        "/auth/register",
+        "https://eventhub1.onrender.com/auth/register",
         credentials
       );
       dispatch({ type: "REGISTER_SUCCESS", payload: res.data.details });
@@ -42,117 +41,116 @@ const Signup = () => {
   };
   return (
     <div>
-      <Navbar/>
-    <div className="mainContainer">
-      <div className="contentArea">
-        <div className="right">
-          <h1>Create an Account!</h1>
-          
-          <form>
-            <input
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="text"
-              placeholder="Username"
-              id="username"
-              onChange={handleChange}
-              required
-            />
-            <input
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="email"
-              placeholder="Email"
-              id="email"
-              onChange={handleChange}
-              required
-            />
+      <Navbar />
+      <div className="mainContainer">
+        <div className="contentArea">
+          <div className="right">
+            <h1>Create an Account!</h1>
 
-            <input
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="text"
-              placeholder="Phone"
-              id="phone"
-              onChange={handleChange}
-              required
-            />
+            <form>
+              <input
+                style={{
+                  width: "100%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="text"
+                placeholder="Username"
+                id="username"
+                onChange={handleChange}
+                required
+              />
+              <input
+                style={{
+                  width: "100%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="email"
+                placeholder="Email"
+                id="email"
+                onChange={handleChange}
+                required
+              />
 
-            <input
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="text"
-              placeholder="City"
-              id="city"
-              onChange={handleChange}
-              required
-            />
+              <input
+                style={{
+                  width: "100%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="text"
+                placeholder="Phone"
+                id="phone"
+                onChange={handleChange}
+                required
+              />
 
-            <input
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="text"
-              placeholder="Country"
-              id="country"
-              onChange={handleChange}
-              required
-            />
+              <input
+                style={{
+                  width: "100%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="text"
+                placeholder="City"
+                id="city"
+                onChange={handleChange}
+                required
+              />
 
-            <input
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="password"
-              placeholder="Password"
-              id="password"
-              onChange={handleChange}
-              required
-            />
+              <input
+                style={{
+                  width: "100%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="text"
+                placeholder="Country"
+                id="country"
+                onChange={handleChange}
+                required
+              />
 
-            <button disabled={loading} onClick={handleClick}>
-              Sign up
-            </button>
-            {error && <span>{error.message}</span>}
-          </form>
+              <input
+                style={{
+                  width: "100%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="password"
+                placeholder="Password"
+                id="password"
+                onChange={handleChange}
+                required
+              />
+
+              <button disabled={loading} onClick={handleClick}>
+                Sign up
+              </button>
+              {error && <span>{error.message}</span>}
+            </form>
+          </div>
         </div>
-        
       </div>
-    </div>
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_START" });
     try {
       const res = await axios.post(
-        "/auth/login",
+        "https://eventhub1.onrender.com/auth/login",
         credentials
       );
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
@@ -37,59 +37,54 @@ const Login = () => {
   };
   return (
     <div>
-      <Navbar/>
-    <div className="mainContainer">
-      
-      <div className="contentArea">
-        <div className="right">
-          <h1 className="heading" >Sign in your account!</h1>
-          
-          <form>
-            <input
-              style={{
-                width: "120%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-                
-              }}
-              type="text"
-              placeholder="Username"
-              id="username"
-              className="inputBox"
-              onChange={handleChange}
-            />
-            <input
-              style={{
-                width: "120%",
-                padding: "15px",
-                border: "none",
-                outline: "none",
-                backgroundColor: "#ddd",
-                borderRadius: "5px",
-              }}
-              type="password"
-              placeholder="Password"
-              id="password"
-              onChange={handleChange}
-            />
-            <NavLink
-              to="/forgot"
-              >
-              <span>Forgot Password?</span>
-            </NavLink>
-            
-            <button  disabled={loading} onClick={handleClick}>
-              Login
-            </button>
-            {error && <span>{error.message}</span>}
-          </form>
+      <Navbar />
+      <div className="mainContainer">
+        <div className="contentArea">
+          <div className="right">
+            <h1 className="heading">Sign in your account!</h1>
+
+            <form>
+              <input
+                style={{
+                  width: "120%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="text"
+                placeholder="Username"
+                id="username"
+                className="inputBox"
+                onChange={handleChange}
+              />
+              <input
+                style={{
+                  width: "120%",
+                  padding: "15px",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "#ddd",
+                  borderRadius: "5px",
+                }}
+                type="password"
+                placeholder="Password"
+                id="password"
+                onChange={handleChange}
+              />
+              <NavLink to="/forgot">
+                <span>Forgot Password?</span>
+              </NavLink>
+
+              <button disabled={loading} onClick={handleClick}>
+                Login
+              </button>
+              {error && <span>{error.message}</span>}
+            </form>
+          </div>
         </div>
-        
       </div>
-    </div>
     </div>
   );
 };

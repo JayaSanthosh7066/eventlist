@@ -26,7 +26,7 @@ const Login = () => {
     dispatch({ type: "LOGIN_START" });
     try {
       const res = await axios.post(
-        "/auth/login",
+        "https://eventhub1.onrender.com/auth/login",
         credentials
       );
       if(res.data.isAdmin){
