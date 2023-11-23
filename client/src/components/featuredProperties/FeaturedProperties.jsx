@@ -11,10 +11,14 @@ import "./featuredProperties.css";
 const FeaturedProperties = ({item}) => {
   const {dispatch}=useContext(SearchContext);
   const { data, loading, error } = useFetch("/halls?featured=true&limit=4");
+  // if (!Array.isArray(data)) {
+  //   console.error("Data is not an array:", data);
+  //   return null; // or handle the error in a way that makes sense for your application
+  // }
   
-  const navigate =  useNavigate()
-
+  const navigate =  useNavigate();
   const [openDate,setOpenDate]= useState(false)
+
   const [dates,setDates]= useState([
       {
           startDate:new Date(),
@@ -70,5 +74,4 @@ const FeaturedProperties = ({item}) => {
     </div>
   );
 };
-
 export default FeaturedProperties;
